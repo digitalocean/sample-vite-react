@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "type": "module",
   "scripts": {
-    "build": "rm -r _static 2>/dev/null; node sammy.js; vite build",
+    "build:vite": "rm -r _static 2>/dev/null; node sammy.js; vite build",
     "start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:$PORT -n",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "dev": "vite",
